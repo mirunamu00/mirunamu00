@@ -7,6 +7,7 @@
 
 <p align="center">
   <a href="https://www.npmjs.com/org/mirunamu"><img src="https://img.shields.io/badge/npm-mirunamu-007acc?style=flat-square&logo=npm&logoColor=white" alt="npm" /></a>
+  <a href="https://www.npmjs.com/~mirunamu"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fnpm-dl-badge.vercel.app%2Fapi%2Fdownloads&style=flat-square" alt="npm downloads" /></a>
   <a href="https://www.twolinecloud.com"><img src="https://img.shields.io/badge/company-Twolinecloud-007acc?style=flat-square&logo=googlechrome&logoColor=white" alt="company" /></a>
   <img src="https://komarev.com/ghpvc/?username=mirunamu00&color=007acc&style=flat-square&label=Profile+views" alt="views" />
 </p>
