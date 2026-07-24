@@ -18,8 +18,8 @@
 Production-grade tools, shipped and maintained — not demos.
 
 - **[usefy](https://github.com/mirunamu00/usefy)** &nbsp;·&nbsp; Production-ready React hooks & utilities, published under the `@usefy` npm org &nbsp;→&nbsp; [usefy-web.vercel.app](https://usefy-web.vercel.app)
+- **klyra** &nbsp;·&nbsp; A lightweight, fast desktop app for managing Kubernetes clusters — a native alternative to heavyweight dashboards, built with **React + Tauri (Rust)**. The project I'm pouring the most into right now. &nbsp;·&nbsp; _in active development_
 - **[@mirunamu/next-redis-cache](https://www.npmjs.com/package/@mirunamu/next-redis-cache)** &nbsp;·&nbsp; Redis cache handler for Next.js 15/16 — dual support for ISR + the `"use cache"` directive
-- **klyra** &nbsp;·&nbsp; A lightweight, fast desktop app for managing Kubernetes clusters — built with **React + Tauri (Rust)** &nbsp;·&nbsp; _in active development_
 - **k3s homelab** &nbsp;·&nbsp; A self-hosted Kubernetes cluster driven entirely by GitOps (ArgoCD, Helm, cert-manager, Longhorn, Prometheus/Grafana)
 
 ---
