@@ -36,6 +36,12 @@ Beyond the frontend, I ship and operate what I build — delivering on-prem with
 
 ---
 
+### 📜 Certifications
+
+![Microsoft Certified: Azure Administrator Associate (AZ-104)](https://img.shields.io/badge/Microsoft_Certified-Azure_Administrator_Associate_(AZ--104)-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
+
+---
+
 ### 🛠 Tech
 
 **Frontend**
