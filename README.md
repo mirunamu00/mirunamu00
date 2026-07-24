@@ -28,9 +28,11 @@ Production-grade tools, shipped and maintained — not demos.
 
 Delivering client & in-house products at **[Twolinecloud](https://www.twolinecloud.com)**:
 
-- **Real-time power-grid monitoring platform** — A ReactFlow-based editor lets operators author monitoring screens (equipment nodes, connections, tag/data bindings), paired with a viewer app that renders them and maps live sensor streams over WebSocket for real-time equipment surveillance. &nbsp;`React` `TypeScript` `ReactFlow` `WebSocket`
+- **Real-time power-grid monitoring platform** — A node-based editor (ReactFlow / GoJS) lets operators author monitoring screens — equipment nodes, connections, tag/data bindings — paired with a viewer app that renders them and maps live sensor streams over WebSocket for real-time equipment surveillance. &nbsp;`React` `TypeScript` `ReactFlow` `GoJS` `WebSocket`
 - **Cloud & MLOps infrastructure platform** — Compose cloud/cluster architectures on AWS/Azure by drag-and-drop, then provision, deploy, and monitor them — backed by a marketplace of reusable architecture templates and Event Storming–based domain modeling. &nbsp;`TypeScript` `Vue`
 - **Data analytics platform** — Data preprocessing and machine-learning pipelines. &nbsp;`Vue`
+
+Beyond the frontend, I ship and operate what I build — delivering on-prem with **Docker Compose**, standing up **Kubernetes clusters** on cloud, and contributing to the delivery infrastructure itself (**ArgoCD**, GitOps).
 
 ---
 
@@ -43,6 +45,8 @@ Delivering client & in-house products at **[Twolinecloud](https://www.twolineclo
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![ReactFlow](https://img.shields.io/badge/React_Flow-FF4154?style=flat-square&logo=reactflow&logoColor=white)
+![GoJS](https://img.shields.io/badge/GoJS-1E88E5?style=flat-square&logoColor=white)
 
 **Native & Backend**
 
