@@ -28,7 +28,7 @@ Production-grade tools, shipped and maintained — not demos.
 
 Delivering client & in-house products at **[Twolinecloud](https://www.twolinecloud.com)**:
 
-- **Real-time power-grid monitoring platform** — A node-based editor (ReactFlow / GoJS) lets operators author monitoring screens — equipment nodes, connections, tag/data bindings — paired with a viewer app that renders them and maps live sensor streams over WebSocket for real-time equipment surveillance. &nbsp;`React` `TypeScript` `ReactFlow` `WebSocket`
+- **Real-time power-grid monitoring platform** — A node-based editor lets operators author monitoring screens — equipment nodes, connections, tag/data bindings — paired with a viewer app that renders them and maps live sensor streams over WebSocket for real-time equipment surveillance. &nbsp;`React` `TypeScript` `ReactFlow` `WebSocket`
 - **Cloud & MLOps infrastructure platform** — Compose cloud/cluster architectures on AWS/Azure by drag-and-drop, then provision, deploy, and monitor them — backed by a marketplace of reusable architecture templates and Event Storming–based domain modeling. &nbsp;`Angular` `TypeScript`
 - **Data analytics platform** — Data preprocessing and machine-learning pipelines. &nbsp;`Vue`
 
