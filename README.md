@@ -53,8 +53,8 @@ Production-grade tools, shipped and maintained — not demos.
 ---
 
 <div align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=mirunamu00&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&title_color=007acc&icon_color=007acc&text_color=768390&bg_color=00000000" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mirunamu00&layout=compact&hide_border=true&langs_count=8&title_color=007acc&text_color=768390&bg_color=00000000" alt="top langs" />
+  <img height="165" src="https://github-readme-stats-jade-iota-23.vercel.app/api?username=mirunamu00&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&title_color=007acc&icon_color=007acc&text_color=768390&bg_color=00000000" alt="stats" />
+  <img height="165" src="https://github-readme-stats-jade-iota-23.vercel.app/api/top-langs/?username=mirunamu00&layout=compact&hide_border=true&langs_count=8&title_color=007acc&text_color=768390&bg_color=00000000" alt="top langs" />
 </div>
 
 <div align="center">
