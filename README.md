@@ -1,8 +1,8 @@
 <h1 align="center">mirunamu</h1>
 
 <p align="center">
-  Frontend &amp; Infrastructure Engineer<br/>
-  <sub>React/Next.js libraries · Tauri desktop apps · a self-hosted Kubernetes homelab</sub>
+  Software Engineer<br/>
+  <sub>Building across the stack — web, native desktop, and infrastructure.</sub>
 </p>
 
 <p align="center">
