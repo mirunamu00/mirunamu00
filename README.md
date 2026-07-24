@@ -1,8 +1,8 @@
-<h1 align="center">Hi, I'm mirunamu 👋</h1>
+<h1 align="center">mirunamu</h1>
 
 <p align="center">
-  <strong>Full-cycle engineer</strong> — I ship React/Next.js libraries to npm,<br/>
-  build native desktop tooling with Tauri, and run my own Kubernetes homelab on GitOps.
+  Frontend &amp; Infrastructure Engineer<br/>
+  <sub>React/Next.js libraries · Tauri desktop apps · a self-hosted Kubernetes homelab</sub>
 </p>
 
 <p align="center">
