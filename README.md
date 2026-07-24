@@ -29,7 +29,8 @@ Production-grade tools, shipped and maintained — not demos.
 Delivering client & in-house products at **[Twolinecloud](https://www.twolinecloud.com)**:
 
 - **Real-time power-grid monitoring platform** — A node-based editor lets operators author monitoring screens — equipment nodes, connections, tag/data bindings — paired with a viewer app that renders them and maps live sensor streams over WebSocket for real-time equipment surveillance. &nbsp;`React` `TypeScript` `ReactFlow` `WebSocket`
-- **Cloud & MLOps infrastructure platform** — Compose cloud/cluster architectures on AWS/Azure by drag-and-drop, then provision, deploy, and monitor them — backed by a marketplace of reusable architecture templates and Event Storming–based domain modeling. &nbsp;`Angular` `TypeScript`
+- **Cloud & MLOps infrastructure platform** — Compose cloud/cluster architectures on AWS/Azure by drag-and-drop, then provision, deploy, and monitor them — backed by a marketplace of reusable architecture templates. &nbsp;`Angular` `TypeScript`
+- **Collaborative Event Storming tool** — A Figma-style real-time whiteboard for domain modeling: multiple users edit the same board together over WebSocket, with GPT integration that auto-generates event-storming diagrams from a prompt. Interoperates with the infrastructure platform above. &nbsp;`TypeScript` `WebSocket` `OpenAI`
 - **Data analytics platform** — Data preprocessing and machine-learning pipelines. &nbsp;`Vue`
 
 Beyond the frontend, I ship and operate what I build — delivering on-prem with **Docker Compose**, standing up **Kubernetes clusters** on cloud, and contributing across the platform layer: GitOps (ArgoCD), observability (Prometheus, Grafana), and distributed storage (Ceph, Longhorn).
@@ -61,6 +62,8 @@ Beyond the frontend, I ship and operate what I build — delivering on-prem with
 ![Tauri](https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
 **Infra & DevOps**
 
