@@ -39,6 +39,12 @@ Beyond the frontend, I ship and operate what I build — delivering on-prem with
 
 ---
 
+### 🎓 Education
+
+- **Kyungpook National University** — Bachelor's degree, Aerospace and Satellite Systems (융복합시스템공학부 항공위성시스템전공)
+
+---
+
 ### 📜 Certifications
 
 ![Microsoft Certified: Azure Administrator Associate (AZ-104)](https://img.shields.io/badge/Microsoft_Certified-Azure_Administrator_Associate_(AZ--104)-0078D4?style=flat-square&logo=microsoftazure&logoColor=white)
