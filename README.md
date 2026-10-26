@@ -51,6 +51,7 @@ Software Engineer at **[Twolinecloud](https://www.twolinecloud.com)** · 2022 �
 - **Power-equipment diagnostics system for a client delivery** · _sole frontend developer_ — Ten screens covering risk matrices, reliability charts, and a large editable grid, with 1,288 unit tests and 176 Playwright scenarios. Delivered into the client's air-gapped network. &nbsp;`React` `TypeScript` `Playwright`
 - **Cloud & MLOps infrastructure platform** — Cluster monitoring, MLOps model management, and the admin console for a multi-cloud Kubernetes platform. &nbsp;`Angular` `Vue` `TypeScript`
 - **Collaborative Event Storming tool** — A real-time domain-modeling whiteboard where GPT output streams into the diagram as it is generated. &nbsp;`TypeScript` `WebSocket` `OpenAI`
+- **Data analytics & ML platform** · _first project_ — Maintenance and feature work on a no-code platform for data preprocessing and machine-learning pipelines, built around a GoJS workflow editor. &nbsp;`Vue` `TypeScript` `GoJS`
 
 ---
 
