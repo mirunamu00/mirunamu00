@@ -1,47 +1,62 @@
 <h1 align="center">mirunamu</h1>
 
 <p align="center">
-  Software Engineer<br/>
-  <sub>Building across the stack — web, native desktop, and infrastructure.</sub>
+  Software Engineer · Frontend lead<br/>
+  <sub>Real-time visualization and web architecture — and the native and infrastructure layers underneath.</sub>
 </p>
 
 <p align="center">
   <a href="https://www.npmjs.com/org/mirunamu"><img src="https://img.shields.io/badge/npm-mirunamu-007acc?style=flat-square&logo=npm&logoColor=white" alt="npm" /></a>
   <a href="https://www.npmjs.com/~mirunamu"><img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fnpm-dl-badge.vercel.app%2Fapi%2Fdownloads&style=flat-square" alt="npm downloads" /></a>
+  <a href="https://docs.mirunamu.info"><img src="https://img.shields.io/badge/blog-docs.mirunamu.info-007acc?style=flat-square&logo=readthedocs&logoColor=white" alt="blog" /></a>
   <a href="https://www.twolinecloud.com"><img src="https://img.shields.io/badge/company-Twolinecloud-007acc?style=flat-square&logo=googlechrome&logoColor=white" alt="company" /></a>
   <img src="https://komarev.com/ghpvc/?username=mirunamu00&color=007acc&style=flat-square&label=Profile+views" alt="views" />
 </p>
 
 ---
 
+### 👋 About
+
+I lead the frontend of a real-time power-equipment monitoring platform: sensor streams from many kinds of diagnostic devices, rendered live. I care about finding the bottleneck with a profiler before touching code, and about the groundwork that keeps a codebase healthy — tests, monorepos, CI/CD, and the Kubernetes it all runs on.
+
+I studied satellite systems, remote sensing, and GIS. When a field needs something I haven't used at work, I build a real, usable project with it.
+
+I work with AI coding agents every day, under design docs, review gates, and tests that I define.
+
+---
+
 ### 🚀 What I'm building
 
-Production-grade tools, shipped and maintained — not demos.
-
-- **KubeLantern** &nbsp;·&nbsp; A lightweight, keyboard-driven Kubernetes desktop client for SREs and platform engineers — designed to be faster and leaner than tools like Lens, local-only with no login or telemetry. Multi-cluster, CRD browsing, YAML edit/apply, live log streaming, exec terminals, and port-forwarding, built with **React + Tauri (Rust)**. The project I'm pouring the most into right now. &nbsp;·&nbsp; _in active development_
-- **[Pigment](https://github.com/mirunamu00/pigment)** &nbsp;·&nbsp; _Give your agent a palette, not a prompt._ A gallery of versioned, agent-ready design systems: pick one, hand your coding agent (Claude Code, Codex, Cursor, any MCP client) a version-pinned prompt, and every screen it builds follows the same measured tokens and rules — served as `agent.md`, `tokens.css/json`, an HTTP API, and an MCP server. Each system comes out of a reproducible harness that captures a reference site, has an agent apply the result to four base apps, and gates it on builds, smoke tests, accessibility, and an independent critic review before publishing. Built with **Next.js + TypeScript (MCP)** &nbsp;→&nbsp; [pigmentui.com](https://pigmentui.com) · [npm](https://www.npmjs.com/package/pigment-mcp)
-- **[usefy](https://github.com/mirunamu00/usefy)** &nbsp;·&nbsp; Production-ready React hooks & utilities, published under the `@usefy` npm org &nbsp;→&nbsp; [usefy-web.vercel.app](https://usefy-web.vercel.app)
-- **[@mirunamu/next-redis-cache](https://github.com/mirunamu00/next-redis-cache)** &nbsp;·&nbsp; Redis cache handler for Next.js 16 — ISR and the `"use cache"` directive with shared tag invalidation, and keeps serving through Redis outages (build-output fallback, circuit breaker). Backed by e2e, chaos, and mutation-tested CI; runs in production on my homelab &nbsp;→&nbsp; [npm](https://www.npmjs.com/package/@mirunamu/next-redis-cache)
-- **k3s homelab** &nbsp;·&nbsp; A self-hosted Kubernetes cluster driven entirely by GitOps (ArgoCD, Helm, cert-manager, Longhorn, Prometheus/Grafana)
+- **Dark Vessel Watch** &nbsp;·&nbsp; Maritime surveillance on real Sentinel-1 SAR imagery: a **C++17 + GDAL** engine detects ships (calibration, land mask, CA-CFAR), detections are matched against AIS to surface vessels sailing without AIS, and analysts review them on a **CesiumJS** 3D globe. Jobs run on a lease-based queue that survives worker crashes, with one OpenTelemetry trace per job. Decisions are recorded as ADRs and every performance change ships with before/after numbers (detection 3.6–4.8× faster after profiling). &nbsp;·&nbsp; _in active development_
+- **KubeLantern** &nbsp;·&nbsp; A keyboard-driven desktop client that keeps up to 32 Kubernetes clusters connected in one window. Logs from up to 30 containers are merged into one timeline by a native Rust engine, and secrets are compared inside the backend so no value ever reaches the UI. Local-only — no account, no telemetry. Built with **Tauri 2 (Rust) + React**. &nbsp;·&nbsp; _first release coming soon at kubelantern.com_
+- **[Pigment](https://github.com/mirunamu00/pigment)** &nbsp;·&nbsp; _Give your agent a palette, not a prompt._ A gallery of versioned, agent-ready design systems: pick one, hand your coding agent (Claude Code, Codex, Cursor, any MCP client) a version-pinned prompt, and every screen it builds follows the same measured tokens and rules — served as `agent.md`, `tokens.css/json`, an HTTP API, and an MCP server. Each system comes out of a reproducible harness that captures a reference site, has an agent apply it to six apps (four base apps plus a landing page and a docs site), and gates it on builds, smoke tests, accessibility, and an independent critic review before publishing. Built with **Next.js + TypeScript (MCP)** &nbsp;→&nbsp; [pigmentui.com](https://pigmentui.com) · [npm](https://www.npmjs.com/package/pigment-mcp)
+- **[@mirunamu/next-redis-cache](https://github.com/mirunamu00/next-redis-cache)** &nbsp;·&nbsp; When Next.js runs as several pods on Kubernetes, each pod keeps its own cache: `revalidateTag` only reaches the pod that served the request, and new pods start cold. No Redis handler supported both of Next.js 16's cache interfaces at the time, so I built one — ISR `cacheHandler` and `"use cache"` `cacheHandlers` with shared tag invalidation. 2.0 reproduced 15 defects as failing tests first, keeps serving build output through Redis outages (timeouts, circuit breaker), and cut Redis memory per build by 88%. Runs in production on my homelab &nbsp;→&nbsp; [npm](https://www.npmjs.com/package/@mirunamu/next-redis-cache)
+- **[usefy](https://github.com/mirunamu00/usefy)** &nbsp;·&nbsp; 80+ independently published React hooks and UI packages under the `@usefy` npm org — including a QR encoder/decoder with Reed–Solomon, a linear-space Myers diff viewer, and a virtualized JSON viewer &nbsp;→&nbsp; [usefy-web.vercel.app](https://usefy-web.vercel.app)
+- **k3s homelab** &nbsp;·&nbsp; A self-hosted Kubernetes cluster driven entirely by GitOps (ArgoCD, Helm, cert-manager, Longhorn, Prometheus/Grafana). Once traced intermittent probe timeouts through four wrong diagnoses to a router firmware bug dropping VXLAN packets.
 
 ---
 
 ### 💼 Experience
 
-Delivering client & in-house products at **[Twolinecloud](https://www.twolinecloud.com)**:
+Software Engineer at **[Twolinecloud](https://www.twolinecloud.com)** · 2022 – present
 
-- **Real-time power-grid monitoring platform** — A node-based editor lets operators author monitoring screens — equipment nodes, connections, tag/data bindings — paired with a viewer app that renders them and maps live sensor streams over WebSocket for real-time equipment surveillance. &nbsp;`React` `TypeScript` `ReactFlow` `WebSocket`
-- **Cloud & MLOps infrastructure platform** — Compose cloud/cluster architectures on AWS/Azure by drag-and-drop, then provision, deploy, and monitor them — backed by a marketplace of reusable architecture templates. &nbsp;`Angular` `TypeScript`
-- **Collaborative Event Storming tool** — A Figma-style real-time whiteboard for domain modeling: multiple users edit the same board together over WebSocket, with GPT integration that auto-generates event-storming diagrams from a prompt. Interoperates with the infrastructure platform above. &nbsp;`TypeScript` `WebSocket` `OpenAI`
-- **Data analytics platform** — Data preprocessing and machine-learning pipelines. &nbsp;`Vue`
-
-Beyond the frontend, I ship and operate what I build — delivering on-prem with **Docker Compose**, standing up **Kubernetes clusters** on cloud, and contributing across the platform layer: GitOps (ArgoCD), observability (Prometheus, Grafana), and distributed storage (Ceph, Longhorn).
+- **Real-time power-equipment monitoring platform** · _frontend lead, 2024 – present_ — Main developer and architecture owner of a platform that streams sensor data from 8+ kinds of diagnostic equipment.
+  - Profiled the live diagnostics screen and redesigned its data path instead of swapping the chart library: **+42% fps** (35.1 → 49.8), 69% fewer frames over 50 ms.
+  - Rendered a 15,000-cell heatmap as a single bitmap (**44.8 → 2.84 ms** per tick) and built a shared frame scheduler that took 3D chart updates from about 5 to 21–46 per second at 56–59 fps.
+  - Designed the WebSocket layer: one socket per URL, reference-counted subscriptions, ZSTD decompression, frame-batched updates.
+  - Led a no-code editor (ReactFlow) where operators build monitoring screens, plus the renderer that binds them to live data.
+  - Merged five frontend repos into one monorepo with full history, packaged a shared UI library, and rebuilt CI/CD on GitOps.
+  - Built an MCP server that lets AI agents author those screens safely (35 tools, every write approved by a person first).
+  &nbsp;`React` `TypeScript` `ReactFlow` `ECharts / WebGL` `WebSocket`
+- **Power-equipment diagnostics system for a client delivery** · _sole frontend developer_ — Ten screens covering risk matrices, reliability charts, and a large editable grid, with 1,288 unit tests and 176 Playwright scenarios. Delivered into the client's air-gapped network. &nbsp;`React` `TypeScript` `Playwright`
+- **Cloud & MLOps infrastructure platform** — Cluster monitoring, MLOps model management, and the admin console for a multi-cloud Kubernetes platform. &nbsp;`Angular` `Vue` `TypeScript`
+- **Collaborative Event Storming tool** — A real-time domain-modeling whiteboard where GPT output streams into the diagram as it is generated. &nbsp;`TypeScript` `WebSocket` `OpenAI`
 
 ---
 
 ### 🎓 Education
 
-- **Kyungpook National University** — Bachelor's degree, Aerospace and Satellite Systems (융복합시스템공학부 항공위성시스템전공)
+- **Kyungpook National University** — B.S., Aerospace and Satellite Systems (융복합시스템공학부 항공위성시스템전공) · remote sensing, satellite image processing, 3D GIS, WebGIS
 
 ---
 
@@ -53,25 +68,29 @@ Beyond the frontend, I ship and operate what I build — delivering on-prem with
 
 ### 🛠 Tech
 
-**Frontend**
+**Frontend & Visualization**
 
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![React](https://img.shields.io/badge/React-149ECA?style=flat-square&logo=react&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
 ![Angular](https://img.shields.io/badge/Angular-DD0031?style=flat-square&logo=angular&logoColor=white)
 ![Vue](https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 ![ReactFlow](https://img.shields.io/badge/React_Flow-FF4154?style=flat-square&logo=reactflow&logoColor=white)
-![GoJS](https://img.shields.io/badge/GoJS-1E88E5?style=flat-square&logoColor=white)
+![ECharts](https://img.shields.io/badge/ECharts-AA344D?style=flat-square&logo=apacheecharts&logoColor=white)
+![WebGL](https://img.shields.io/badge/WebGL-990000?style=flat-square&logo=webgl&logoColor=white)
+![Cesium](https://img.shields.io/badge/CesiumJS-6CADDF?style=flat-square&logo=cesium&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat-square&logo=playwright&logoColor=white)
 
-**Native & Backend**
+**Native, Geo & Backend**
 
+![C++](https://img.shields.io/badge/C++17-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![GDAL](https://img.shields.io/badge/GDAL-5CAE58?style=flat-square&logo=osgeo&logoColor=white)
+![PostGIS](https://img.shields.io/badge/PostGIS-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust&logoColor=white)
 ![Tauri](https://img.shields.io/badge/Tauri-24C8DB?style=flat-square&logo=tauri&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)
 
 **Infra & DevOps**
 
@@ -82,8 +101,8 @@ Beyond the frontend, I ship and operate what I build — delivering on-prem with
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+![OpenTelemetry](https://img.shields.io/badge/OpenTelemetry-000000?style=flat-square&logo=opentelemetry&logoColor=white)
 ![Ceph](https://img.shields.io/badge/Ceph-EF5C55?style=flat-square&logo=ceph&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 ---
 
