@@ -1,8 +1,8 @@
 <h1 align="center">mirunamu</h1>
 
 <p align="center">
-  Software Engineer · Frontend lead<br/>
-  <sub>Real-time visualization and web architecture — and the native and infrastructure layers underneath.</sub>
+  Software Engineer · Frontend lead · AI agent systems<br/>
+  <sub>Real-time visualization, web architecture, and the tooling that lets AI agents do real work safely.</sub>
 </p>
 
 <p align="center">
@@ -21,7 +21,7 @@ I lead the frontend of a real-time power-equipment monitoring platform: sensor s
 
 I studied satellite systems, remote sensing, and GIS. When a field needs something I haven't used at work, I build a real, usable project with it.
 
-I work with AI coding agents every day, under design docs, review gates, and tests that I define.
+I work with AI coding agents every day, and I build the systems around them: an MCP server that lets agents do domain work end to end, a benchmark that measures what the server gives them, and an issue-to-PR pipeline where agents investigate and fix while people approve and merge.
 
 ---
 
@@ -46,8 +46,13 @@ Software Engineer at **[Twolinecloud](https://www.twolinecloud.com)** · 2022 �
   - Designed the WebSocket layer: one socket per URL, reference-counted subscriptions, ZSTD decompression, frame-batched updates.
   - Led a no-code editor (ReactFlow) where operators build monitoring screens, plus the renderer that binds them to live data.
   - Merged five frontend repos into one monorepo with full history, packaged a shared UI library, and rebuilt CI/CD on GitOps.
-  - Built an MCP server that lets AI agents author those screens safely (35 tools, every write approved by a person first).
-  &nbsp;`React` `TypeScript` `ReactFlow` `ECharts / WebGL` `WebSocket`
+  - Built an MCP server that lets AI agents author those screens end to end without seeing the source: **92 tools**, 3,454 knowledge facts each carrying its source and verification status, a schematic preview so the agent can check its own output, and 7,299 tests. Every write is planned, approved by a person, then committed, with a backup before and a re-read after.
+  - Measured the server, not the model: a 91-scenario benchmark on a live dev server judges whether what the server *gave* the agent was wrong or missing, with each defect confirmed against the raw responses by an independent reviewer. The first round's 9 confirmed defects were fixed and the re-check found none.
+  - Added a live monitor where people watch the agent's planned and saved changes before approving them, with per-user edit locks so a person and an agent never edit the same screen at once.
+  - Built an issue-to-PR pipeline for the team: QA files a Jira issue, an agent investigates read-only and pinpoints the layer and repo, and once an approver signs off, Claude Code fixes and tests it on an ephemeral in-house runner and opens a PR for a person to review and merge. The runner trusts only the issue key and re-checks approval itself, the agent can edit and test but never push or merge, and tests are re-run outside the agent.
+  - Unified the team's AI coding setup with rulesync: one source generates the rules, 8 roles, and 14 skills for every supported agent (Claude Code, Codex, and more), with implementation, review, and testing split across separate agents.
+  - Rebuilt the main deploy pipeline into per-package gates and parallel builds; only images that pass their gates are pushed (about 45 → 16 minutes).
+  &nbsp;`React` `TypeScript` `ReactFlow` `ECharts / WebGL` `WebSocket` `MCP` `Claude Code` `GitHub Actions`
 - **Power-equipment diagnostics system for a client delivery** · _sole frontend developer_ — Ten screens covering risk matrices, reliability charts, and a large editable grid, with 1,288 unit tests and 176 Playwright scenarios. Delivered into the client's air-gapped network. &nbsp;`React` `TypeScript` `Playwright`
 - **Cloud & MLOps infrastructure platform** — Cluster monitoring, MLOps model management, and the admin console for a multi-cloud Kubernetes platform. &nbsp;`Angular` `Vue` `TypeScript`
 - **Collaborative Event Storming tool** — A real-time domain-modeling whiteboard where GPT output streams into the diagram as it is generated. &nbsp;`TypeScript` `WebSocket` `OpenAI`
@@ -92,6 +97,14 @@ Software Engineer at **[Twolinecloud](https://www.twolinecloud.com)** · 2022 �
 ![Node.js](https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-FF4438?style=flat-square&logo=redis&logoColor=white)
 ![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socketdotio&logoColor=white)
+
+**AI & Agents**
+
+![MCP](https://img.shields.io/badge/MCP-000000?style=flat-square&logo=modelcontextprotocol&logoColor=white)
+![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat-square&logo=claude&logoColor=white)
+![Anthropic API](https://img.shields.io/badge/Anthropic_API-191919?style=flat-square&logo=anthropic&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white)
 
 **Infra & DevOps**
 
